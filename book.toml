@@ -1,6 +1,12 @@
 [book]
+title = "RuxOS Book"
 authors = ["yanjuguang"]
 language = "en"
+description = "RuxOS guide book"
 multilingual = false
 src = "src"
-title = "RuxOS Book"
+
+[output.html]
+default-theme = "navy"
+git-repository-url = "https://github.com/syswonder/ruxos"
+git-repository-icon = "fa-github"
