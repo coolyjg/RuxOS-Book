@@ -4,37 +4,51 @@
 
 # About RuxOS
 
-- [RuxOS overview](./Overview.md)
+- [RuxOS overview](./chap01/Overview.md)
 
 # Getting Started with RuxOS
 
-- [Get Started](./getstarted.md)
+- [Get Started](./chap02/getstarted.md)
 
-    - [Hello World!](./helloworld.md)
+    - [Arguments](./chap02/arguments.md)
 
-    - [Iperf](./iperf.md)
+    - [Existing apps](./chap02/apps/root.md)
 
-    - [Sqlite](./sqlite.md)
+        - [Hello World!](./chap02/apps/helloworld.md)
 
-    - [Redis](./redis.md)
+        - [Iperf](./chap02/apps/iperf.md)
 
-    - [Nginx](./nginx.md)
+        - [Sqlite](./chap02/apps/sqlite.md)
 
-- [Your App](./your_app.md)
+        - [Redis](./chap02/apps/redis.md)
 
-- [Build from ruxgo](./ruxgo.md)
+        - [Nginx](./chap02/apps/nginx.md)
 
-- [Multi-Platforms](./multiplatforms.md)
+- [Your App](./chap03/your_app.md)
 
-    - [Raspi4](./Raspi4.md)
+- [Build from ruxgo](./chap04/ruxgo.md)
+
+- [Multi-Platforms](./chap05/multiplatforms.md)
+
+    - [Raspi4](./chap05/Raspi4.md)
 
 # Architeture and Design
 
-- [Crates](./crates.md)
+- [Design Overview](./chap06/design_overview.md)
 
-- [Modules](./modules.md)
+    - [Crates](./chap06/crates/crates.md)
 
-    - [9pfs](./9pfs.md)
+    - [Modules](./chap06/modules/modules.md)
+
+        - [9pfs](./chap06/modules/9pfs.md)
+
+- [User Library](./chap07/ulib/ulib.md)
+        
+    - [ruxos-posix-api](./chap07/ulib/ruxos-posix-api.md)
+
+    - [ruxlibc](./chap07/ulib/ruxlibc.md)
+
+    - [ruxmusl](./chap07/ulib/ruxmusl.md)
 
 
 # Future Work

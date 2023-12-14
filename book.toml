@@ -7,6 +7,6 @@ multilingual = false
 src = "src"
 
 [output.html]
-default-theme = "navy"
+default-theme = "light"
 git-repository-url = "https://github.com/syswonder/ruxos"
 git-repository-icon = "fa-github"

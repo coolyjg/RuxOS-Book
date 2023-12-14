@@ -6,7 +6,7 @@ RuxOS supports Redis Server on Qemu.
 ## Create disk.img
 
 Run following command at root directory of RuxOS. 
-```
+```shell
 make disk_img
 ```
 This command will create `disk.img` to store data, and this image will be passed to qemu as a disk image.
@@ -14,7 +14,7 @@ This command will create `disk.img` to store data, and this image will be passed
 ## Run Redis-Server
 
 Run following command to start a redis server at port 5555.
-```
+```shell
 make A=apps/c/redis/ LOG=error NET=y BLK=y ARCH=aarch64 SMP=4 ARGS="./redis-server,--bind,0.0.0.0,--port,5555,--save,\"\",--appendonly,no,--protected-mode,no,--ignore-warnings,ARM64-COW-BUG" run
 ```
 Parameter explanation:
@@ -31,14 +31,14 @@ After running this command, a Redis Server is started on port 5555.
 ## Connect to Redis-Server
 
 It is recommended to use [redis tools](https://redis.io/resources/tools/) to connect to Redis Server by:
-```
+```shell
 sudo apt install redis-tools
 ```
 
 ### redis-cli
 
 Then you can use:
-```
+```shell
 redis-cli -p 5555
 ```
 
@@ -47,7 +47,7 @@ Then it is nothing different from a linux redis server.
 ### redis-benchmark
 
 Use the Redis benchmark testing tool to test:
-```
+```shell
 redis-benchmark -p 5555
 ```
 More parameters can be found on [Redis Benchmark](https://redis.io/docs/management/optimization/benchmarks/).
@@ -63,7 +63,7 @@ By adding `MUSL=y` to the make command, redis server will be compiled, linked by
 By default, RuxOS passes application arguments by `ARGS`, which can be inconvenient. RuxOS successfully integrate 9p protocol, and provide 9pfs to share directories and files between host and qemu. 
 
 Run following command:
-```
+```shell
 make A=apps/c/redis/ LOG=error NET=y V9P=y BLK=y V9P_PATH=apps/c/redis ARCH=aarch64 SMP=4 ARGS="./redis-server,/v9fs/redis.conf" run
 ```
 Parameter explanation:
