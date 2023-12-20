@@ -3,9 +3,9 @@
 
 This chapter will cover:
 
-* What ruxlibc is, and how to use ruxlibc
+* What [ruxlibc](./ruxlibc.md) is, and how to use ruxlibc
 
-* How musl is integrated and what is ruxmusl
+* How musl libc is integrated and what is [ruxmusl](./ruxmusl.md)
 
-* What ruxos-posix-api is, and the difference between ruxos-posix-api and standard posix API
+* What [ruxos-posix-api](./ruxos-posix-api.md) is, and the difference between ruxos-posix-api and standard posix API
 

@@ -16,7 +16,7 @@
 
         - [Hello World!](./chap02/apps/helloworld.md)
 
-        - [Iperf](./chap02/apps/iperf.md)
+        - [Iperf3](./chap02/apps/iperf.md)
 
         - [Sqlite](./chap02/apps/sqlite.md)
 
