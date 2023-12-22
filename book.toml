@@ -3,7 +3,7 @@ title = "RuxOS Book"
 authors = ["yanjuguang"]
 language = "en"
 description = "RuxOS guide book"
-multilingual = false
+multilingual = true
 src = "src"
 
 [output.html]
